@@ -1,0 +1,10 @@
+<ul>
+<% @articles.each do |article| %>
+<li>
+  <p><%= link_to article.title, article_path(article) %></p>
+  <p><%= article.content %></p>
+</li>
+<% end %>
+</ul>
+
+ <button type="button" class="btn btn-default"><%= link_to("Add A New Article", new_article_path) %></button>

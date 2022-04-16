@@ -1,0 +1,27 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ACE in Action</title>
+
+</head>
+<body>
+<h1>Create a New Article</h1>
+<p>
+<div id="editor">You can type in here using HTML, and it will show up
+</div>
+</p>
+<script>
+const textContents = editor.textContent;
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    // editor.session.setMode("ace/mode/javascript");
+</script>
+</body>
+</html>
